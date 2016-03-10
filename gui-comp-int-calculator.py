@@ -107,6 +107,10 @@ class compintapp_tk(Tkinter.Tk):
         intearn = round((amount - p),2)
         self.amt.set(amount)
         self.earn.set(intearn)
+        pamount = "{:,}".format(amount)
+        pintearn = "{:,}".format(intearn)
+        self.amt.set(pamount)
+        self.earn.set(pintearn)
         
 if __name__ == "__main__":
     app = compintapp_tk(None)
@@ -115,4 +119,4 @@ if __name__ == "__main__":
 
     
 ## Notes:
-## anchor for title at 'centre'
+## anchor for title at 'center'
